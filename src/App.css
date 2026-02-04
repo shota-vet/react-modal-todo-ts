@@ -1,0 +1,77 @@
+/* ...existing code... */
+
+.container {
+  padding: 30px;
+  font-family: sans-serif;
+}
+
+.addButton {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #d3d3d3;
+  cursor: pointer;
+}
+
+.todoList {
+  margin-top: 16px;
+  padding-left: 20px;
+}
+
+.todoEmpty {
+  opacity: 0.6;
+  list-style: none;
+}
+
+/* 画面全体を覆う透明な1枚の巨大div、これを背景にしてクリック閉じるためのもの、inset0が4方向0にして画面全体に引き伸ばしているイメージ absoluteは親のサイズ依存（全画面にならない可能性）なのでmodalではfixedを常に使用し画面全体 */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+}
+
+.modalContent {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  width: 320px;
+  box-shadow: 0 8px 24px rgba(128, 4, 229, 0.8);
+}
+/* box-shadow:横ずれ,縦ずれ,ぼかしレベル、rgb(a) = 色 + 透明度(a); */
+.modalContent > h2 {
+  color: #3e32a8;
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+/* borderboxがないとpaddingとかが含まれないからmodalからはみ出る */
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.btn {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: #1e90ff;
+  color: #fff;
+  border-color: #1e90ff;
+}
+
+/* ...existing code... */
