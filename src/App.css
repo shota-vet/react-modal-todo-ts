@@ -60,7 +60,8 @@
   margin-top: 12px;
 }
 
-.btn {
+.btn.cancel {
+  color: #000000;
   padding: 8px 12px;
   border-radius: 6px;
   border: 1px solid #ccc;

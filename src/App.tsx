@@ -73,7 +73,7 @@ Reactが自動描画）*/}
               <button className="btn primary" onClick={addTodo}>
                 Add
               </button>
-              <button className="btn" onClick={closeModal}>
+              <button className="btn cancel" onClick={closeModal}>
                 Cancel
               </button>
             </div>
